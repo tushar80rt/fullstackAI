@@ -13,7 +13,7 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:5173",
-        "https://gleeful-twilight-a8160f.netlify.app/",
+        "https://silly-wisp-c41929.netlify.app",
     ],  # frontend origins
     allow_credentials=True,
     allow_methods=["*"],  
