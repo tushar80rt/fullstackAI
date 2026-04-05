@@ -8,7 +8,7 @@ class Query(BaseModel):
 
 app = FastAPI()
 
-# ✅ CORS Middleware add karo
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
@@ -23,8 +23,6 @@ app.add_middleware(
 @app.post("/run")
 async def run_agents(data: Query):
     raw = run_crew(data.query)
-
-    # CrewAI output ko force clean string me convert kar do
     try:
         output = str(raw)
     except:
