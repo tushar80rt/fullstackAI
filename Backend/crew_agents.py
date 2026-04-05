@@ -3,7 +3,7 @@ import groq
 from crewai import Agent, Task, Crew, LLM
 from dotenv import load_dotenv
 
-# api.env file se env load karo
+
 load_dotenv("api.env")
 
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
