@@ -9,7 +9,7 @@ load_dotenv("api.env")
 GROQ_API_KEY = os.getenv("GROQ_API_KEY")
 
 groq_llm = LLM(
-    model="groq/meta-llama/llama-4-maverick-17b-128e-instruct",  # ya jo bhi model use karna hai
+    model="groq/meta-llama/llama-4-maverick-17b-128e-instruct",  
     api_key=GROQ_API_KEY
 )
 
